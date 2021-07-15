@@ -14,7 +14,7 @@ starry=Cookies.get('stored').split(',');
 
 // Diplay past queries
 function read_queries(starry){
-	console.log(starry);
+	// console.log(starry);
 	$.ajax({
 		url : "index_db.php",
 		type : "post",
@@ -30,7 +30,7 @@ function add_query(last_id) {
 		last_id = last_id.toString();
 		if(!starry.includes(last_id)) {
 		starry.push(last_id);
-		console.log(starry);
+		// console.log(starry);
 		Cookies.set('stored',starry,{ expires: 183 });
 		// alert(Cookies.get('stored'));
 		read_queries(starry);
@@ -137,7 +137,7 @@ $( "form" ).on( "submit", function(e) {
 		success: function (data,status) {
 			$("#acknowledge").addClass('alert-success').html('Request recorded successfully ! Sit back and relax. No more anxiously checking for results. :)').fadeIn();
 			$("#acknowledge").fadeOut(5000);
-			console.log(data);
+			// console.log(data);
 			add_query(data);
 		}
 	});
