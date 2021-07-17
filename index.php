@@ -32,7 +32,7 @@
     </style>
   </head>
   <body>
-    <div class="container p-4 mt-5 shadow">
+    <div class="container p-4 mt-5 mb-5 shadow">
       <div class="row m-1">
         <p><h4>Mumbai University Result Notification</h4></p>
         <p>(Get a notification alert on your discord channel when your result arrives)</p>
@@ -58,34 +58,34 @@
           <form action="" name = 'details'>
 
          		<div class="form-group col-sm-12 col-md-5 ">
-               <label class="font-weight-bold" for="program_code">Program code <a href="#" data-toggle="tooltip"  title="Check Exam no. in your Hall ticket"><i class="fas fa-info-circle small" title=""></i></a></label>
+               <label class="font-weight-bold" for="program_code">Program code <span style="color:red">*</span> <a href="#" data-toggle="tooltip"  title="Check Exam no. in your Hall ticket"><i class="fas fa-info-circle small" title=""></i></a></label>
 
                <input class="form-control shadow text-uppercase" type="text" onblur="validateProgcode()" name="program_code" id="program_code" placeholder="eg. 1T00728 for Computer Engineering">
                <p class = "text-danger font-italic" id="progcodeerror"></p>
          		</div>
 
          		<div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="semester">Semester <span class="small">(1-8)<span></label>
+               <label class="font-weight-bold" for="semester">Semester <span class="small">(1-8) </span><span style="color:red">*</span></label>
 
          			<input class="form-control shadow" type="number" name="semester" onblur="validateSem()" id="semester" placeholder="eg. 8">
                <p class = "text-danger font-italic" id="semerror"></p>
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="college">College <a href="#" data-toggle="tooltip" data-placement="right" title='short-form code of your college, eg: RAIT for Ramrao Adik Institute of Technology'><i class="fas fa-info-circle small" ></i></a></label>
+               <label class="font-weight-bold" for="college">College <span style="color:red">* </span><a href="#" data-toggle="tooltip" data-placement="right" title='short-form code of your college, eg: RAIT for Ramrao Adik Institute of Technology'><i class="fas fa-info-circle small" ></i></a></label>
 
          			<input class="form-control shadow text-uppercase" type="text" name="college" id="college" title="" placeholder="eg. SIES">
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="firstname">Webhook Link to your discord channel <a data-toggle="tooltip" title="Click on me" onclick="$('#third_tab').trigger('click')"><i class="fas fa-info-circle small" ></i></a></label>
+               <label class="font-weight-bold" for="firstname">Webhook Link to your discord channel <span style="color:red">* </span><a data-toggle="tooltip" title="Click on me" onclick="$('#third_tab').trigger('click')"><i class="fas fa-info-circle small" ></i></a></label>
 
-         			<textarea class="form-control shadow" name="webhook_link" onblur="validateWebhook()" id="webhook_link" placeholder="discord webhook link "></textarea>
+         			<textarea class="form-control shadow" name="webhook_link" onblur="validateWebhook()" id="webhook_link" placeholder="discord webhook link"></textarea>
                <p class = "text-danger font-italic" id="webhookerror"></p>
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="period">Semester period</label>
+               <label class="font-weight-bold" for="period">Semester period <span style="color:red">*</span></label>
          			<select class="form-control mt-1 shadow" name="period" id="period">
          				<option value="F">First-Half of the year</option>
          				<option value="S">Second-Half of the year</option>
@@ -93,16 +93,16 @@
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="year">Year of exam</label>
+               <label class="font-weight-bold" for="year">Year of exam <span style="color:red">*</span></label>
          			<select class="form-control mt-1 shadow" name="year" id="year">
          				<option value="20">2020</option>
-         				<option value="21">2021</option>
+         				<option value="21" selected>2021</option>
          			</select>
          		</div>
 
          		<input type="submit" name="submit" id="submit_btn" class="btn btn-primary ml-3" value="Alert me!"></button>
    	     </form>
-   	      <div class="alert m-3" id = 'acknowledge'></div>
+   	      <p class="alert mt-3" id = 'acknowledge'></p>
         </div>
 
         <div id="alerts" class="container tab-pane fade"><br>
@@ -111,7 +111,7 @@
 
 
           </div>
-          <div class="alert m-2" id="del_acknowledge"></div>
+          <p class="alert m-2" id="del_acknowledge"></p>
         </div>
 
         <div id="tutorial" class="container tab-pane fade"><br>
@@ -142,7 +142,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- external js -->
     <script src="master.js"></script>
   </body>
 </html>

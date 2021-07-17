@@ -7,16 +7,16 @@ extract($_POST);
 if(isset($_POST['program_code']))
 {
   if(isset($_POST['program_code']))
-  {$program_code = strtoupper($_POST['program_code']);}
+  {$program_code = strtoupper(trim($_POST['program_code']));}
 
   if(isset($_POST['semester']))
-  {$semester = $_POST['semester'];}
+  {$semester = trim($_POST['semester']);}
 
   if(isset($_POST['college']))
-  {$college = strtoupper($_POST['college']);}
+  {$college = strtoupper(trim($_POST['college']));}
 
   if(isset($_POST['webhook_link']))
-  {$webhook_link = strtolower($_POST['webhook_link']);}
+  {$webhook_link = strtolower(trim($_POST['webhook_link']));}
 
   if(isset($_POST['period']))
   {$period = $_POST['period'];}
@@ -26,7 +26,8 @@ if(isset($_POST['program_code']))
 
   $period .= $year;
 
-  $query = "INSERT INTO query (program_code,semester,college,webhook_link,period) values ('$program_code','$semester','$college','$webhook_link','$period')";
+
+  $query = "INSERT INTO query (program_code,semester,college,webhook_link,period,timestamp) values ('$program_code','$semester','$college','$webhook_link','$period',date('Y-m-d H-i-s'))";
 
 //   if(mysqli_query($conn,$query)){
 // 	$msg='Request recorded successfully ! Sit back and relax. No more anxiously checking for results. :)';
