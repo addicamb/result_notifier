@@ -125,7 +125,7 @@
         <div id="tutorial" class="container tab-pane fade"><br>
           <h3>Create Webhook</h3><h6>(How to create a webhook in your discord channel)</h6>
           <ol class="list-group">
-            <li class="list-group-item">Open the Discord <strong>Desktop app</strong> from you PC or laptop. If you don't have it, you can get it from <a href="https://discord.com/download" target="_blank">here</a>.</li>
+            <li class="list-group-item">Open the Discord <strong>Desktop app</strong> on your PC or laptop. If you don't have it, you can get it from <a href="https://discord.com/download" target="_blank">here</a>.</li>
             <li class="list-group-item">Right click on your discord server (group) where you want to receive Result alert notification message and select <strong>Server Settings</strong>. <em>(You need to be an admin of the server to create the webhook)</em></li>
             <!-- <li class="list-group-item">Right click on any one of the text channels (#general) and select <strong>Edit channel</strong>.</li> -->
             <li class="list-group-item">Click on <strong>Integrations</strong> in the left panel.</li>
@@ -133,7 +133,7 @@
               <ul>
                 <li class="m-2"><strong>Edit the avatar : </strong> <i>(optional)</i>&nbsp; By clicking the avatar next to the Name in the top left</li>
                 <li class="m-2"><strong>Choose what channel the Webhook posts to : </strong>&nbsp; By selecting the desired text channel in the dropdown menu.</li>
-                <li class="m-2"><strong>Name your Webhook : </strong>&nbsp; Good for distinguishing multiple webhooks for multiple different services.</li>
+                <li class="m-2"><strong>Name your Webhook : </strong> <i>(optional)</i>&nbsp; Good for distinguishing multiple webhooks for multiple different services.</li>
                 </ul>
             </li>
             <li class="list-group-item">Note the URL from the <strong>Copy Webhook URL</strong> field.</li>
