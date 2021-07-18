@@ -89,8 +89,8 @@
              <div class="form-group col-sm-12 col-md-4 ">
                <label class="font-weight-bold" for="period">Semester period <span style="color:red">*</span></label>
          			<select class="form-control mt-1 shadow" name="period" id="period">
-         				<option value="F">First-Half of the year</option>
-         				<option value="S">Second-Half of the year</option>
+         				<option value="F">First-Half of the year (January-May)</option>
+         				<option value="S">Second-Half of the year (July-December)</option>
          			</select>
          		</div>
 
