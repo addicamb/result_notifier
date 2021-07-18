@@ -35,6 +35,8 @@
     <div class="container p-4 mt-5 mb-5 shadow">
       <div class="row m-1">
         <p><h4>Mumbai University Result Notification</h4></p>
+      </div>
+      <div class="row m-1"
         <p>(Get a notification alert on your discord channel when your result arrives)</p>
       </div>
       <hr>
@@ -58,7 +60,7 @@
           <form action="" name = 'details'>
 
          		<div class="form-group col-sm-12 col-md-5 ">
-               <label class="font-weight-bold" for="program_code">Program code <span style="color:red">*</span> <a href="#" data-toggle="tooltip"  title="Check Exam no. in your Hall ticket"><i class="fas fa-info-circle small" title=""></i></a></label>
+               <label class="font-weight-bold" for="program_code">Program code <span style="color:red">*</span> <a href="#" data-toggle="tooltip"  title="Check Exam no. in your Hall ticket"><i class="fas fa-info-circle text-primary small" title=""></i></a></label>
 
                <input class="form-control shadow text-uppercase" type="text" onblur="validateProgcode()" name="program_code" id="program_code" placeholder="eg. 1T00728 for Computer Engineering">
                <p class = "text-danger font-italic" id="progcodeerror"></p>
@@ -72,13 +74,13 @@
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="college">College <span style="color:red">* </span><a href="#" data-toggle="tooltip" data-placement="right" title='short-form code of your college, eg: RAIT for Ramrao Adik Institute of Technology'><i class="fas fa-info-circle small" ></i></a></label>
+               <label class="font-weight-bold" for="college">College <span style="color:red">* </span><a href="#" data-toggle="tooltip" data-placement="right" title='short-form code of your college, eg: RAIT for Ramrao Adik Institute of Technology'><i class="fas fa-info-circle text-primary small" ></i></a></label>
 
          			<input class="form-control shadow text-uppercase" type="text" name="college" id="college" title="" placeholder="eg. SIES">
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="firstname">Webhook Link to your discord channel <span style="color:red">* </span><a data-toggle="tooltip" title="Click on me" onclick="$('#third_tab').trigger('click')"><i class="fas fa-info-circle small" ></i></a></label>
+               <label class="font-weight-bold" for="firstname">Webhook Link to your discord channel <span style="color:red">* </span><a data-toggle="tooltip" title="Click on me" onclick="$('#third_tab').trigger('click')"><i class="fas fa-question-circle text-primary small" ></i></a></label>
 
          			<textarea class="form-control shadow" name="webhook_link" onblur="validateWebhook()" id="webhook_link" placeholder="discord webhook link"></textarea>
                <p class = "text-danger font-italic" id="webhookerror"></p>
@@ -100,9 +102,15 @@
          			</select>
          		</div>
 
-         		<input type="submit" name="submit" id="submit_btn" class="btn btn-primary ml-3" value="Alert me!"></button>
+         		<input type="submit" name="submit" id="submit_btn" class="btn btn-primary ml-3 mt-1 shadow" value="Alert me!">
    	     </form>
-   	      <p class="alert mt-3" id = 'acknowledge'></p>
+         <div id='soft_warn' class='ml-3 mt-3' style="color:red">
+
+         </div>
+   	      <div class="alert mt-3" id = 'acknowledge'>
+
+          </div>
+
         </div>
 
         <div id="alerts" class="container tab-pane fade"><br>
