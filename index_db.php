@@ -16,7 +16,7 @@ if(isset($_POST['program_code']))
   {$college = strtoupper(trim($_POST['college']));}
 
   if(isset($_POST['webhook_link']))
-  {$webhook_link = strtolower(trim($_POST['webhook_link']));}
+  {$webhook_link = trim($_POST['webhook_link']);}
 
   if(isset($_POST['period']))
   {$period = $_POST['period'];}
