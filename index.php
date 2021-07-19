@@ -114,16 +114,27 @@
         </div>
 
         <div id="alerts" class="container tab-pane fade"><br>
-          <button type="button" class="btn btn-sm btn-danger d-flex ml-auto font-weight-bold" onclick="remove_query('all')">Remove All</button>
+
+          <div class="row">
+        	<h3 class="ml-2">Alerts</h3>
+          <button type="button" class="btn btn-sm btn-danger  ml-auto mr-2 font-weight-bold" onclick="remove_query('all')">Remove All</button>
+          </div>
+          <hr>
           <div class="row resultinfo">
 
 
           </div>
-          <p class="alert m-2" id="del_acknowledge"></p>
+          <p class="alert m-2 d-flex" id="del_acknowledge"></p>
+
         </div>
 
         <div id="tutorial" class="container tab-pane fade"><br>
-          <h3>Create Webhook</h3><h6>(How to create a webhook in your discord channel)</h6>
+
+          <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank" class="text-dark"> <i class="fas fa-info-circle m-2" ></i></a><em>Webhooks are a simple way to post messages from other apps and websites into Discord using internet magic. </em>
+          <hr>
+          <h3 class="m-2">Create Webhook</h3>
+          <h6 class="m-2">( How to create a webhook in your discord channel )</h6>
+
           <ol class="list-group">
             <li class="list-group-item">Open the Discord <strong>Desktop app</strong> on your PC or laptop. If you don't have it, you can get it from <a href="https://discord.com/download" target="_blank">here</a>.</li>
             <li class="list-group-item">Right click on your discord server (group) where you want to receive Result alert notification message and select <strong>Server Settings</strong>. <em>(You need to be an admin of the server to create the webhook)</em></li>
@@ -131,8 +142,8 @@
             <li class="list-group-item">Click on <strong>Integrations</strong> in the left panel.</li>
             <li class="list-group-item">Click the <strong>Create Webhook</strong> button.
               <ul>
-                <li class="m-2"><strong>Edit the avatar : </strong> <i>(optional)</i>&nbsp; By clicking the avatar next to the Name in the top left</li>
                 <li class="m-2"><strong>Choose what channel the Webhook posts to : </strong>&nbsp; By selecting the desired text channel in the dropdown menu.</li>
+                <li class="m-2"><strong>Edit the avatar : </strong> <i>(optional)</i>&nbsp; By clicking the avatar next to the Name in the top left</li>
                 <li class="m-2"><strong>Name your Webhook : </strong> <i>(optional)</i>&nbsp; Good for distinguishing multiple webhooks for multiple different services.</li>
                 </ul>
             </li>
