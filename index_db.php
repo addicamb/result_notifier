@@ -49,7 +49,7 @@ elseif (isset($_POST['starry']))
   $starry = join("','",$starry);
   $data='';
 
-  $query = " SELECT * from query WHERE id in ('$starry') ORDER by id";
+  $query = " SELECT id,program_code,semester,college from query WHERE id in ('$starry') ORDER by id";
   $result = mysqli_query($conn,$query);
 
   if(mysqli_num_rows($result) > 0){
@@ -63,7 +63,7 @@ elseif (isset($_POST['starry']))
 							<p></p>
               <span class="d-flex justify-content-center"><button type="button" onclick="remove_query('.$row['id'].')" class="btn btn-danger btn-sm">Remove</button></span>
 							</div></div>
-							';
+              ';
 		}
 	}
     	echo $data;
