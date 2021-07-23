@@ -74,7 +74,7 @@
          		</div>
 
              <div class="form-group col-sm-12 col-md-4 ">
-               <label class="font-weight-bold" for="college">College <span style="color:red">* </span><a href="#" data-toggle="tooltip" data-placement="right" title='short-form code of your college, eg: RAIT for Ramrao Adik Institute of Technology'><i class="fas fa-info-circle text-primary small" ></i></a></label>
+               <label class="font-weight-bold" for="college">College <a href="#" data-toggle="tooltip" data-placement="right" title='short-form code of your college, eg: RAIT for Ramrao Adik Institute of Technology'><i class="fas fa-info-circle text-primary small" ></i></a></label>
 
          			<input class="form-control shadow text-uppercase" type="text" name="college" id="college" title="" placeholder="eg. SIES">
          		</div>
