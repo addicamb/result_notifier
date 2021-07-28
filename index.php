@@ -29,6 +29,9 @@
     div.container{
       background: #fff;
     }
+    ::placeholder{
+      font-style: italic;
+    }
     </style>
   </head>
   <body>
@@ -82,7 +85,7 @@
              <div class="form-group col-sm-12 col-md-4 ">
                <label class="font-weight-bold" for="firstname">Webhook Link to your discord channel <span style="color:red">* </span><a data-toggle="tooltip" title="Click on me" onclick="$('#third_tab').trigger('click')"><i class="fas fa-question-circle text-primary small" ></i></a></label>
 
-         			<textarea class="form-control shadow" name="webhook_link" onblur="validateWebhook()" id="webhook_link" placeholder="discord webhook link"></textarea>
+         			<textarea class="form-control shadow" name="webhook_link" onblur="validateWebhook()" id="webhook_link" placeholder="discord webhook url"></textarea>
                <p class = "text-danger font-italic" id="webhookerror"></p>
          		</div>
 
