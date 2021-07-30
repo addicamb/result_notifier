@@ -1,0 +1,33 @@
+body{
+/* background: -webkit-linear-gradient(left,   #0072ff, #00c6ff); */
+  background-color: #f2f2f2;
+}
+div.container{
+  background: #fff;
+}
+::placeholder{
+  font-style: italic;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ol.list-group {
+    list-style: decimal inside;
+}
+.list-group-item {
+    display: list-item;
+}
+.valid {
+    background: url(images/valid.png) 98% center / 25px no-repeat ;
+}
+.invalid {
+    background: url(images/invalid.png) 98% center / 25px no-repeat ;
+}
+.valid-webhook {
+    background: url(images/valid.png) 98% bottom / 25px no-repeat ;
+}
+.invalid-webhook {
+    background: url(images/invalid.png) 98% bottom / 25px no-repeat ;
+}

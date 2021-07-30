@@ -5,33 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<!-- <meta name="google-signin-client_id" content="538244115643-4oen2qh08rjjl3197k7g1m80btc9t5jq.apps.googleusercontent.com"> -->
   	<link rel="icon" href="images/mu.jpg" sizes="16x16">
-    <link rel="stylesheet" href="styles.css">
 
   	<title>Results Alert</title>
 
   	<!-- bootstrap CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- icons library -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
-    ol.list-group {
-        list-style: decimal inside;
-    }
 
-    .list-group-item {
-        display: list-item;
-    }
-    body{
-    /* background: -webkit-linear-gradient(left,   #0072ff, #00c6ff); */
-    background-color: #f2f2f2;
-    }
-    div.container{
-      background: #fff;
-    }
-    ::placeholder{
-      font-style: italic;
-    }
     </style>
   </head>
   <body>
@@ -39,8 +24,8 @@
       <div class="row m-1">
         <p><h4>Mumbai University Result Notification</h4></p>
       </div>
-      <div class="row m-1"
-        <p>(Get a notification alert on your discord channel when your result arrives)</p>
+      <div class="row m-1">
+        <p>( Get a notification alert on your discord channel when your result arrives. A tool that checks <a href="http://mumresults.in" target="_blank">mumresults.in</a> for your results at regular intervals so that you don't have to. )</p>
       </div>
       <hr>
       <div class="row m-0">
@@ -65,14 +50,14 @@
          		<div class="form-group col-sm-12 col-md-5 ">
                <label class="font-weight-bold" for="program_code">Program code <span style="color:red">*</span> <a href="#" data-toggle="tooltip"  title="Check Exam no. in your Hall ticket"><i class="fas fa-info-circle text-primary small" title=""></i></a></label>
 
-               <input class="form-control shadow text-uppercase" type="text" onblur="validateProgcode()" name="program_code" id="program_code" placeholder="eg. 1T00728 for Computer Engineering">
+               <input class="form-control shadow-sm text-uppercase" type="text" oninput="validateProgcode()" name="program_code" id="program_code" placeholder="eg. 1T00728 for Computer Engineering">
                <p class = "text-danger font-italic" id="progcodeerror"></p>
          		</div>
 
          		<div class="form-group col-sm-12 col-md-4 ">
                <label class="font-weight-bold" for="semester">Semester <span class="small">(1-8) </span><span style="color:red">*</span></label>
 
-         			<input class="form-control shadow" type="number" name="semester" onblur="validateSem()" id="semester" placeholder="eg. 8">
+         			<input class="form-control shadow-sm" type="number" name="semester" oninput="validateSem()" id="semester" placeholder="eg. 8">
                <p class = "text-danger font-italic" id="semerror"></p>
          		</div>
 
@@ -85,7 +70,7 @@
              <div class="form-group col-sm-12 col-md-4 ">
                <label class="font-weight-bold" for="firstname">Webhook Link to your discord channel <span style="color:red">* </span><a data-toggle="tooltip" title="Click on me" onclick="$('#third_tab').trigger('click')"><i class="fas fa-question-circle text-primary small" ></i></a></label>
 
-         			<textarea class="form-control shadow" name="webhook_link" onblur="validateWebhook()" id="webhook_link" placeholder="discord webhook url"></textarea>
+         			<textarea class="form-control shadow" name="webhook_link" oninput="validateWebhook()" id="webhook_link" rows="4" placeholder="discord webhook url"></textarea>
                <p class = "text-danger font-italic" id="webhookerror"></p>
          		</div>
 
