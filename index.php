@@ -25,7 +25,7 @@
         <p><h4>Mumbai University Result Notification</h4></p>
       </div>
       <div class="row m-1">
-        <p>( Get a notification alert on your discord channel when your result arrives. A tool that checks <a href="http://mumresults.in" target="_blank">mumresults.in</a> for your results at regular intervals so that you don't have to. )</p>
+        <p>Get a notification alert on your discord channel when your result arrives. A tool that checks <a href="http://mumresults.in" target="_blank">mumresults.in</a> for your results at regular intervals so that you don't have to.</p>
       </div>
       <hr>
       <div class="row m-0">
@@ -131,14 +131,13 @@
             <li class="list-group-item">Click the <strong>Create Webhook</strong> button.
               <ul>
                 <li class="m-2"><strong>Choose what channel the Webhook posts to : </strong>&nbsp; By selecting the desired text channel in the dropdown menu.</li>
-                <li class="m-2"><strong>Edit the avatar : </strong> <i>(optional)</i>&nbsp; By clicking the avatar next to the Name in the top left</li>
                 <li class="m-2"><strong>Name your Webhook : </strong> <i>(optional)</i>&nbsp; Good for distinguishing multiple webhooks for multiple different services.</li>
+                <li class="m-2"><strong>Edit the avatar : </strong> <i>(optional)</i>&nbsp; By clicking the avatar next to the Name in the top left</li>
                 </ul>
             </li>
             <li class="list-group-item">Note the URL from the <strong>Copy Webhook URL</strong> field.</li>
           </ol>
         </div>
-
       </div>
     </div>
     <!-- jquery js -->
