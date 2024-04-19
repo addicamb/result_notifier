@@ -33,9 +33,9 @@
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#alerts">Alerts History</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#tutorial" id='third_tab'>Discord Webhook - How to</a>
         </li>
@@ -85,8 +85,9 @@
              <div class="form-group col-sm-12 col-md-4 ">
                <label class="font-weight-bold" for="year">Year of exam <span style="color:red">*</span></label>
          			<select class="form-control mt-1 shadow" name="year" id="year">
-         				<option value="20">2020</option>
-         				<option value="21" selected>2021</option>
+         				<option id="year_b4_prev_year"></option>
+                <option id="prev_year"></option>
+         				<option selected id="curr_year"></option>
          			</select>
          		</div>
 
@@ -100,7 +101,7 @@
           </div>
 
         </div>
-
+<!--
         <div id="alerts" class="container tab-pane fade"><br>
 
           <div class="row">
@@ -115,7 +116,7 @@
           <p class="alert m-2 d-flex" id="del_acknowledge"></p>
 
         </div>
-
+-->
         <div id="tutorial" class="container tab-pane fade"><br>
 
           <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank" class="text-dark"> <i class="fas fa-info-circle m-2" ></i></a><em>Webhooks are a simple way to post messages from other apps and websites into Discord using internet magic. </em>
